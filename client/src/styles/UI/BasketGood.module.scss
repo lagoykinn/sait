@@ -1,0 +1,134 @@
+.basket__good {
+  width: 100%;
+  height: 200px;
+  margin: 10px 0;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #b4acac;
+
+  .good__grid {
+    width: 98%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    // LEFT CARD SECTION
+
+    .good__info__section {
+      width: 500px;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      > * {
+        padding: 0 10px;
+      }
+
+      .image__container {
+        height: 100%;
+        background-color: #b4acac;
+        border-radius: 10px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          height: 80%;
+          border-radius: 10px;
+        }
+
+        .sticker {
+            width: 27.5px;
+            height: 27.5px;
+            position: absolute;
+            right: 2.5px;
+            top: 2.5px;
+
+        }
+      }
+
+      .info__container {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+      }
+    }
+
+    // RIGHT CARD SECTION
+
+    .good__actions__section {
+      width: 250px;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .amount__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .buttons {
+          width: 150px;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+
+          > div {
+            width: 100%;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(193, 193, 193);
+          }
+
+          :nth-child(1) {
+            border-radius: 30px 0 0 30px;
+          }
+          :nth-child(3) {
+            border-radius: 0 30px 30px 0;
+          }
+        }
+
+        .price__container {
+          display: flex;
+          justify-content: space-between;
+
+          > span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            > * {
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 20px;
+              margin: 0 2px;
+            }
+          }
+        }
+
+    }
+    .actions__container {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    }
+  }
+}

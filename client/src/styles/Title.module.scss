@@ -1,0 +1,22 @@
+.main__title {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    > * {
+        padding: 15px;
+        font-weight: 100;
+    }
+
+    span {
+        font-size: 2.3vw;
+    }
+
+    div {
+        color: rgb(180, 180, 180);
+    }
+}

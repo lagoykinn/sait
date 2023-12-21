@@ -1,0 +1,120 @@
+@import "_variables";
+
+.header {
+  width: 100vw;
+  height: 100px;
+
+  .second__header {
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid $border;
+
+    .second__grid {
+      width: 90vw;
+      height: 100%;
+      margin: auto;
+    }
+  }
+
+  .main__header {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid $border;
+
+    .main__grid {
+      width: 90vw;
+      height: 100%;
+      display: flex;
+      margin: auto;
+      justify-content: space-between;
+      align-items: center;
+
+      .catalog__container {
+        width: 110px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .burger__icon {
+          width: 25px;
+          height: 25px;
+        }
+
+        .catalog__title {
+          font-size: $titleFont;
+        }
+      }
+
+      //   3-RD SECTION
+
+      .user__container {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .input__search {
+          width: 70%;
+          height: 80%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid $border;
+          border-radius: 10px;
+
+          div {
+            width: 35px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px 0 0 10px;
+            background-color: transparent;
+
+            img {
+              height: 35px;
+              padding: 5px;
+              border-right: 1px solid $border;
+              background-color: transparent;
+              position: absolute;
+            }
+          }
+
+          input {
+            background-color: transparent;
+          }
+        }
+        
+        input {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: none;
+          padding: 10px;
+          border-radius: 0 10px 10px 0;
+        }
+
+        .user__icons {
+          width: 45px;
+          height: 45px;
+
+          img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+          }
+        }
+
+
+        input:focus {
+          outline: none;
+          border: none;
+        }
+      }
+    }
+  }
+}

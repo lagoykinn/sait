@@ -1,0 +1,10 @@
+@import './_variables';
+
+.body__container {
+    width: 100%;
+    min-height: calc(100vh - 80px - 80px - 10px + 20px);
+    position: relative;
+    background-image: url(../assets/smoke.png); 
+    background-repeat: repeat;
+    background-color: $bodyTheme;
+}
